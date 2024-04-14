@@ -35,8 +35,20 @@ public class Main {
         System.out.println("\ntask 4");
         double vasilyAccount = 15_000;
         for (int u = 1; vasilyAccount < 12_000_000; u++) {
-            vasilyAccount = (vasilyAccount * 1.07);
+            vasilyAccount = vasilyAccount * 1.07;
             System.out.printf("В %s месяц на счету у Василия %.2f рублей %n", u, vasilyAccount);
         }
+//task5
+        System.out.println("\ntask 5");
+        double vasilyAccount2 = 15_000;
+        for (int u = 1; vasilyAccount2 < 12_000_000; u++) {
+            vasilyAccount2 = vasilyAccount2 * 1.07;
+            if (u % 6 == 0) {
+                System.out.printf("В %s месяц на счету у Василия %.2f рублей %n", u, vasilyAccount2);
+            }
+        }
+        System.out.println();
+//task6
+        System.out.println("\ntask 6");
     }
 }
