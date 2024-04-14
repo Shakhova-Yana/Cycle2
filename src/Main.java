@@ -7,7 +7,7 @@ public class Main {
         int money = 0;
         int month = 1;
         while (money <= 2_459_000) {
-            money = (int) ((money + 15000) * 1.01);
+            money += 15000;
             month++;
         }
         System.out.printf("Месяц %s, сумма накоплений равна %s рублей %n", month, money);
@@ -64,15 +64,10 @@ public class Main {
 
 //task7
         System.out.println("\ntask 7");
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.println("Чтоб закончит нажми 0");
-            int fridayReport = scanner.nextInt();
+            int fridayReport = 5;
             if (fridayReport == 0) {
-                break;
-            }
             for (int j = fridayReport; j < 31; j += 7) {
-                System.out.printf("«Сегодня пятница, %s-е число. Необходимо подготовить отчет»%n", j);
+                System.out.printf("Сегодня пятница, %s-е число. Необходимо подготовить отчет%n", j);
             }
         }
 //task8
