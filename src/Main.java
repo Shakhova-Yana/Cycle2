@@ -31,5 +31,12 @@ public class Main {
             opulationInCountryY = opulationInCountryY + birthRate - mortalityRate;
             System.out.printf("«Год %s, численность населения составляет %s» %n", j, opulationInCountryY);
         }
+//task4
+        System.out.println("\ntask 4");
+        double vasilyAccount = 15_000;
+        for (int u = 1; vasilyAccount < 12_000_000; u++) {
+            vasilyAccount = (vasilyAccount * 1.07);
+            System.out.printf("В %s месяц на счету у Василия %.2f рублей %n", u, vasilyAccount);
+        }
     }
 }
