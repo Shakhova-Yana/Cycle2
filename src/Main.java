@@ -50,5 +50,14 @@ public class Main {
         System.out.println();
 //task6
         System.out.println("\ntask 6");
+        double vasilyAccount3 = 15_000;
+        int nineYearsMonths = 9 * 12;
+        for (int u = 1; u <= nineYearsMonths; u++) {
+            vasilyAccount3 = vasilyAccount3 * 1.07;
+            if (u % 6 == 0) {
+                System.out.printf("В %s месяц на счету у Василия %.2f рублей %n", u, vasilyAccount3);
+            }
+        }
+        System.out.println();
     }
 }
