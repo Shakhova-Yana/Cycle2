@@ -68,5 +68,16 @@ public class Main {
         for (int j = fridayReport; j < 31; j += 7) {
             System.out.printf("«Сегодня пятница, %s-е число. Необходимо подготовить отчет»%n", j);
         }
+//task8
+        System.out.println("\ntask 8");
+        int currentYear = 2024;
+        int begin = currentYear - 200;
+        int end = currentYear + 100;
+
+        for (int j = 0; j < end; j+= 79) {
+            if (j >= begin) {
+                System.out.println(j);
+            }
+        }
     }
 }
