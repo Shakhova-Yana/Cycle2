@@ -20,5 +20,16 @@ public class Main {
         for (; i > 0; i--) {
             System.out.print(i + " ");
         }
+//task3
+        System.out.println("\ntask 3");
+        int opulationInCountryY = 12_000_000;
+        int birthRate;
+        int mortalityRate;
+        for (int j = 1; j <= 10; j++) {
+            birthRate = opulationInCountryY / 1000 * 17;
+            mortalityRate = opulationInCountryY / 1000 * 8;
+            opulationInCountryY = opulationInCountryY + birthRate - mortalityRate;
+            System.out.printf("«Год %s, численность населения составляет %s» %n", j, opulationInCountryY);
+        }
     }
 }
