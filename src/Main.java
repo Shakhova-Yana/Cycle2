@@ -61,20 +61,26 @@ public class Main {
             }
         }
         System.out.println();
+
 //task7
         System.out.println("\ntask 7");
         Scanner scanner = new Scanner(System.in);
-        int fridayReport = scanner.nextInt();
-        for (int j = fridayReport; j < 31; j += 7) {
-            System.out.printf("«Сегодня пятница, %s-е число. Необходимо подготовить отчет»%n", j);
+        while (true) {
+            System.out.println("Чтоб закончит нажми 0");
+            int fridayReport = scanner.nextInt();
+            if (fridayReport == 0) {
+                break;
+            }
+            for (int j = fridayReport; j < 31; j += 7) {
+                System.out.printf("«Сегодня пятница, %s-е число. Необходимо подготовить отчет»%n", j);
+            }
         }
 //task8
         System.out.println("\ntask 8");
         int currentYear = 2024;
         int begin = currentYear - 200;
         int end = currentYear + 100;
-
-        for (int j = 0; j < end; j+= 79) {
+        for (int j = 0; j < end; j += 79) {
             if (j >= begin) {
                 System.out.println(j);
             }
