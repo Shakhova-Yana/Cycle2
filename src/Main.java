@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 //task1
@@ -59,5 +61,12 @@ public class Main {
             }
         }
         System.out.println();
+//task7
+        System.out.println("\ntask 7");
+        Scanner scanner = new Scanner(System.in);
+        int fridayReport = scanner.nextInt();
+        for (int j = fridayReport; j < 31; j += 7) {
+            System.out.printf("«Сегодня пятница, %s-е число. Необходимо подготовить отчет»%n", j);
+        }
     }
 }
