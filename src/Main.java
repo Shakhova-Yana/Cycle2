@@ -10,7 +10,9 @@ public class Main {
             money += 15000;
             month++;
         }
-        System.out.printf("Месяц %s, сумма накоплений равна %s рублей %n", month, money);
+        {
+            System.out.printf("Месяц %s, сумма накоплений равна %s рублей %n", month, money);
+        }
 //task2
         System.out.println("\ntask 2");
         int i = 0;
@@ -60,15 +62,15 @@ public class Main {
                 System.out.printf("В %s месяц на счету у Василия %.2f рублей %n", u, vasilyAccount3);
             }
         }
-        System.out.println();
+        {
+            System.out.println();
+        }
 
 //task7
         System.out.println("\ntask 7");
-            int fridayReport = 5;
-            if (fridayReport == 0) {
-            for (int j = fridayReport; j < 31; j += 7) {
-                System.out.printf("Сегодня пятница, %s-е число. Необходимо подготовить отчет%n", j);
-            }
+        int fridayReport = 5;
+        for (int j = fridayReport; j < 31; j += 7) {
+            System.out.printf("Сегодня пятница, %s-е число. Необходимо подготовить отчет%n", j);
         }
 //task8
         System.out.println("\ntask 8");
